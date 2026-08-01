@@ -2,24 +2,23 @@ site_name: Linux Kernel Development
 site_description: Original guides on Linux kernel development, architecture, and contribution workflow.
 theme:
   name: material
-    palette:
-        scheme: slate
-            primary: indigo
-              features:
-                  - navigation.sections
-                      - content.code.copy
+  palette:
+    scheme: slate
+    primary: indigo
+  features:
+    - navigation.sections
+    - content.code.copy
 
-                      nav:
-                        - Home: index.md
-                          - Getting Started: getting-started.md
-                            - Kernel Architecture: kernel-architecture.md
-                              - Building the Kernel: building-the-kernel.md
-                                - Contributing Upstream: contributing-upstream.md
-                                  - Debugging Tools: debugging-tools.md
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Kernel Architecture: kernel-architecture.md
+  - Building the Kernel: building-the-kernel.md
+  - Contributing Upstream: contributing-upstream.md
+  - Debugging Tools: debugging-tools.md
 
-                                  markdown_extensions:
-                                    - toc:
-                                          permalink: true
-                                            - admonition
-                                              - fenced_code
-                                              
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - fenced_code
