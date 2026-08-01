@@ -3,11 +3,23 @@ site_description: Original guides on Linux kernel development, architecture, and
 theme:
   name: material
   palette:
-    scheme: slate
-    primary: indigo
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   features:
     - navigation.sections
+    - navigation.top
     - content.code.copy
+    - content.tabs.link
 
 nav:
   - Home: index.md
@@ -16,9 +28,23 @@ nav:
   - Building the Kernel: building-the-kernel.md
   - Contributing Upstream: contributing-upstream.md
   - Debugging Tools: debugging-tools.md
+  - Memory Map: memory-map.md
+  - Flashcards: flashcards.md
 
 markdown_extensions:
   - toc:
       permalink: true
   - admonition
-  - fenced_code
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
