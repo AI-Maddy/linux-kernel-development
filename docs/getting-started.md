@@ -19,3 +19,7 @@ Use an existing config as a baseline instead of starting from nothing. Running `
 Most kernel developers use ctags or cscope, or an LSP such as clangd generated from compile_commands.json (via the scripts/clang-tools/gen_compile_commands.py helper), to navigate the tree efficiently. Investing in cross-reference tooling pays off quickly given the size of the codebase.
 
 The next page looks at how the source tree is organized so this tooling has structure to navigate.
+
+
+!!! tip "Save time"
+    Clone with `--depth 1` if you only need the latest commit on a stable branch; it downloads much faster than a full history clone.
