@@ -6,12 +6,8 @@ The material assumes basic familiarity with C and the command line, but no prior
 
 ## What you will learn
 
-- How the kernel source tree is organized and how subsystems interact
-- - How to configure, cross-compile, and boot a custom kernel
-  - - How kernel development workflow differs from typical application development (mailing lists, patches, maintainers)
-    - - How to use core debugging facilities such as printk, ftrace, and kgdb
-     
-      - ## How to use this site
-     
-      - Work through the pages in order if you are new to kernel development. If you already have experience, jump directly to the topic you need using the navigation menu.
-      - 
+By the end of this site you should understand how the kernel source tree is organized and how subsystems interact, how to configure, cross-compile, and boot a custom kernel, how kernel development workflow differs from typical application development (mailing lists, patches, maintainers), and how to use core debugging facilities such as printk, ftrace, and kgdb.
+
+## How to use this site
+
+Work through the pages in order if you are new to kernel development. If you already have experience, jump directly to the topic you need using the navigation menu.
