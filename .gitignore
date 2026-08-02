@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Source corpus — kept locally, never published
+#
+# These directories hold text extracted from commercially published,
+# copyrighted books (Essential Linux Device Drivers, Professional Linux Kernel
+# Architecture, Linux Kernel Development, Mastering Embedded Linux Programming,
+# and others). They are working material for writing the notes in docs/ — they
+# are not ours to redistribute, so they stay out of the repository.
+#
+# Note that a `.md` extension does not change this: the chunked `*_parts/`
+# files are the same verbatim book text under a different suffix.
+# ─────────────────────────────────────────────────────────────────────────────
+
+RefManagement/
+Learning-Path/
+Linux/References/
+
+# Chunked book extracts, wherever they appear
+*_parts/
+*_parts_txt/
+
+# Raw extracted text
+*.txt
+!Linux/Kernel/PROGRESS.txt
+!Linux/Kernel/PROJECT_COMPLETION_SUMMARY.txt
+!Linux/Kernel/BOOK_TO_CHEATSHEET_MAPPING.txt
+!Linux/Kernel/DETAILED_CROSSREFERENCE.txt
+
+# Source documents
+*.pdf
+*.epub
+*.chm
+*.mobi
+*.djvu
+*:Zone.Identifier
+
+# ── Build output ─────────────────────────────────────────────────────────────
+site/
+.cache/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ── Editors / OS ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
