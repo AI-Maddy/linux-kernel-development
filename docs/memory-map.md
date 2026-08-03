@@ -4,10 +4,15 @@ A visual map of how the core concepts in this site connect. Use it to refresh yo
 
 ```mermaid
 graph TD
-Kernel((Linux Kernel)) --> Arch[Architecture]
+Kernel((Linux Kernel)) --> Start[Getting Started]
+Kernel --> Arch[Architecture]
 Kernel --> Build[Build System]
 Kernel --> Contrib[Upstream Contribution]
 Kernel --> Debug[Debugging]
+
+Start --> Start1[clone a stable branch]
+Start --> Start2[defconfig and olddefconfig]
+Start --> Start3[ctags, cscope, clangd]
 
 Arch --> Arch1[arch slash - CPU specific code]
 Arch --> Arch2[drivers slash - device drivers]
@@ -33,5 +38,4 @@ Debug --> Debug3[kgdb and kdb]
 
 ## Quick recall
 
-Architecture explains where things live in the source tree. Build System explains how source becomes a bootable image. Upstream Contribution explains how a change gets from your machine into the mainline kernel. Debugging explains how to find out why any of the above went wrong.
-    
+Getting Started explains how to set up a development environment and get the source. Architecture explains where things live in the source tree. Build System explains how source becomes a bootable image. Upstream Contribution explains how a change gets from your machine into the mainline kernel. Debugging explains how to find out why any of the above went wrong.
