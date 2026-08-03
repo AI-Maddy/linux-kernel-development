@@ -43,6 +43,20 @@ graph LR
     N[net/] -->|socket layer| K
 ```
 
+## :material-code-tags: Code Examples
+
+**List the top-level directories that account for most kernel work:**
+
+```bash
+ls -d arch drivers fs kernel mm net
+```
+
+**Find which maintainer and mailing list own a given subsystem file, straight from the tree layout:**
+
+```bash
+./scripts/get_maintainer.pl --file fs/ext4/super.c
+```
+
 ## :material-alert: Pitfalls
 
 !!! warning "Assuming direct cross-calls"
